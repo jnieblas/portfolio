@@ -1,7 +1,21 @@
 doctype html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    ul
+      li
+        a(class="active", href="/") Home
+      li
+        a(href="/projects") Projects
+      li
+        div(class="slide_button")
+          a Social
+          div
+            a(href="https://www.github.com/jonnieblas", target="_blank",
+             class="fa fa-github")
+            a(href="https://www.linkedin.com/in/jonathan-nieblas-aa8909174/",
+              target="_blank", class="fa fa-linkedin")
     block content
