@@ -3,19 +3,21 @@ doctype html
 html
   head
     title= title
+    script(src="/jquery/jquery.js")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    ul
+    ul(id="navbar-tabs")
       li
-        a(class="active", href="/") Home
+        a(id="home", href="/") Home
       li
-        a(href="/projects") Projects
+        a(id="projects", href="/projects") Projects
       li
         div(class="slide_button")
-          a Social
+          a(id="social", href="#") Social
           div
             a(href="https://www.github.com/jonnieblas", target="_blank",
              class="fa fa-github")
             a(href="https://www.linkedin.com/in/jonathan-nieblas-aa8909174/",
               target="_blank", class="fa fa-linkedin")
+    script(src="/javascripts/AddActive.js")
     block content
