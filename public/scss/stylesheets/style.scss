@@ -1,0 +1,120 @@
+$body-background: #f1f1f1;
+$navbar-color: #d9d9d9;
+$active-color: #a8a8a8;
+$home-hover: DodgerBlue;
+$projects-hover: #c80000;
+$social-hover: #eba407;
+$resume-hover: #028a28;
+$github-black: #211f1f;
+
+body {
+  background: $body-background;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: $navbar-color;
+  overflow: hidden;
+}
+
+li a {
+  font: Cambria;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: inherit;
+  overflow: hidden;
+}
+
+#home:hover {
+  background-color: $home-hover;
+  color: beige;
+}
+
+#projects:hover {
+  background-color: $projects-hover;
+  color: beige;
+}
+
+li a#social:hover {
+  background-color: $social-hover;
+  color: beige;
+  overflow: hidden;
+}
+
+.slide_button {
+  overflow: hidden;
+  border: none;
+  float: left;
+
+  #social {
+    overflow: hidden;
+    cursor: pointer;
+    float: left;
+    background-color: $navbar-color;
+    color: black;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+  }
+
+  .socialLinks{
+    display: none;
+    position: relative;
+    background-color: $navbar-color;
+    color: black;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  &:hover .socialLinks {
+    background-color: $navbar-color;
+    display: inline;
+  }
+}
+
+.fa {
+  font-size: 1.4em;
+  padding: 14px 16px;
+  float: left;
+  transition-timing-function: ease-out;
+}
+
+.fa-github {
+  color: $github-black;
+
+  &:hover{
+    background-color: $github-black ;
+    color: white;
+  }
+}
+
+.fa-linkedin {
+  color: $github-black;
+  &:hover{
+    background-color: $github-black;
+    color: white;
+  }
+}
+
+#resume{
+  float: right;
+
+  &:hover {
+    background-color: $resume-hover;
+    color: white;
+  }
+}
