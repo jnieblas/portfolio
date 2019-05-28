@@ -1,8 +1,30 @@
 extends layout
 
 block content
-  p(id="intro") Hello, my name is Jonathan.
 
-  div(class="home-container")
-    img(src="/images/me1.png" style="width:100%")
-  br
+  div(class="parent-container")
+    hr
+    br
+    section(class="halved-container")
+      div(class="left")
+        img(src="/images/me1.png" style="width:100%")
+      div(class="right")
+        article
+          h1 My name is Jonathan Nieblas and I love to code.
+          p
+            | Thanks for checking out my site! I've compiled a collection
+            | of different projects, interests, and skills that I think
+            | best represent me. Please, feel free to take a look around.
+            | If you have any questions or would just like to
+            | chat, shoot me an email or connect with me on LinkedIn!
+    br
+    hr
+    br
+
+    div(class="interests")
+      h1 Tech that has fascinated me lately:
+      div(class="tech-items")
+        div
+          a(href="#", target="blank", class="fab fa-docker")
+        div
+          a(href="#", target="blank", class="fab fa-jenkins")

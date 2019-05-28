@@ -26,9 +26,6 @@ app.use(
         src: path.join(__dirname, '/public/scss/'),
         dest: path.join(__dirname, '/public/'),
         debug: true,
-        indentedSyntax: false,
-        sourceMap: true,
-        outputStyle: 'compressed'
     }),
     express.static(path.join(__dirname, 'public')));
 
