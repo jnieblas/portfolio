@@ -14,6 +14,10 @@ $github-black: #211f1f;
 $linkedin-blue: #0077b5;
 $docker-blue: #0db7ed;
 $jenkins-red: #d33834;
+$aws-blue: #232F3E ;
+$python-blue: #306998;
+$javascript-yellow: #f0db4f;
+$java-blue: #007396;
 
 /* Layout Content */
 body {
@@ -100,8 +104,7 @@ li a#social:hover {
   float: left;
   transition-timing-function: ease-out;
   color: $github-black;
-
-  &:hover{ color: beige; }
+  &:hover { color: beige; }
 }
 
 #resume {
@@ -162,26 +165,33 @@ li a#social:hover {
     display: inline-block;
     position: relative;
     margin: auto;
+    border-style: solid;
 
-    div{
+    a {
       position: relative;
       display: inline-block;
-
-      a {
-        float: left;
-        font-size: 40px;
-        text-align: center;
-        text-decoration: none;
-        outline-style: solid;
-
-        &:hover { color: $github-black; }
-      }
+      border-right: solid;
+      float: left;
+      font-size: 40px;
+      text-align: center;
+      text-decoration: none;
+      &:hover { border-right-color: $github-black; }
     }
+
+    a:last-child { border-right: none; }
   }
 }
 
 /* Company hover changes */
-.fa-github:hover{ background-color: $github-black; }
-.fa-linkedin:hover{ background-color: $linkedin-blue; }
+.fa-github:hover { background-color: $github-black; }
+.fa-linkedin:hover { background-color: $linkedin-blue; }
 .fa-docker:hover { background-color: $docker-blue; }
 .fa-jenkins:hover { background-color: $jenkins-red; }
+.fa-aws:hover { background-color: $aws-blue; }
+.fa-python:hover { background-color: $python-blue; }
+.fa-js-square:hover {
+  color: $github-black;
+  background-color: $javascript-yellow;
+}
+.fa-java:hover { background-color: $java-blue; }
+.fa-linux:hover { background-color: $github-black; }

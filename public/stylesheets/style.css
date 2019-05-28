@@ -121,18 +121,20 @@ li a#social:hover {
   .interests .tech-items {
     display: inline-block;
     position: relative;
-    margin: auto; }
-    .interests .tech-items div {
+    margin: auto;
+    border-style: solid; }
+    .interests .tech-items a {
       position: relative;
-      display: inline-block; }
-      .interests .tech-items div a {
-        float: left;
-        font-size: 40px;
-        text-align: center;
-        text-decoration: none;
-        outline-style: solid; }
-        .interests .tech-items div a:hover {
-          color: #211f1f; }
+      display: inline-block;
+      border-right: solid;
+      float: left;
+      font-size: 40px;
+      text-align: center;
+      text-decoration: none; }
+      .interests .tech-items a:hover {
+        border-right-color: #211f1f; }
+    .interests .tech-items a:last-child {
+      border-right: none; }
 
 /* Company hover changes */
 .fa-github:hover {
@@ -146,3 +148,19 @@ li a#social:hover {
 
 .fa-jenkins:hover {
   background-color: #d33834; }
+
+.fa-aws:hover {
+  background-color: #232F3E; }
+
+.fa-python:hover {
+  background-color: #306998; }
+
+.fa-js-square:hover {
+  color: #211f1f;
+  background-color: #f0db4f; }
+
+.fa-java:hover {
+  background-color: #007396; }
+
+.fa-linux:hover {
+  background-color: #211f1f; }
