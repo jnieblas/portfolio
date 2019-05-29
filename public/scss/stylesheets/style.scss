@@ -16,8 +16,8 @@ $docker-blue: #0db7ed;
 $jenkins-red: #d33834;
 $aws-blue: #232F3E ;
 $python-blue: #306998;
-$javascript-yellow: #f0db4f;
-$java-blue: #007396;
+$centos-purple: #a14f8c;
+$node-green: #215732;
 
 /* Layout Content */
 body {
@@ -189,9 +189,5 @@ li a#social:hover {
 .fa-jenkins:hover { background-color: $jenkins-red; }
 .fa-aws:hover { background-color: $aws-blue; }
 .fa-python:hover { background-color: $python-blue; }
-.fa-js-square:hover {
-  color: $github-black;
-  background-color: $javascript-yellow;
-}
-.fa-java:hover { background-color: $java-blue; }
-.fa-linux:hover { background-color: $github-black; }
+.fa-centos:hover { background-color: $centos-purple; }
+.fa-node-js:hover { background-color: $node-green; }

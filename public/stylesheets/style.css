@@ -155,12 +155,8 @@ li a#social:hover {
 .fa-python:hover {
   background-color: #306998; }
 
-.fa-js-square:hover {
-  color: #211f1f;
-  background-color: #f0db4f; }
+.fa-centos:hover {
+  background-color: #a14f8c; }
 
-.fa-java:hover {
-  background-color: #007396; }
-
-.fa-linux:hover {
-  background-color: #211f1f; }
+.fa-node-js:hover {
+  background-color: #215732; }
