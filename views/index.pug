@@ -1,8 +1,7 @@
 extends layout
 
 block content
-
-  div(class="parent-container")
+  div(id="parent-container")
     hr
     br
     section(class="halved-container")
@@ -24,9 +23,24 @@ block content
     div(class="interests")
       h1 Tech I've been fascinated with lately:
       div(class="tech-items")
-        a(href="#", target="blank", class="fab fa-docker")
-        a(href="#", target="blank", class="fab fa-jenkins")
-        a(href="#", target="blank", class="fab fa-aws")
-        a(href="#", target="blank", class="fab fa-python")
-        a(href="#", target="blank", class="fab fa-centos")
-        a(href="#", target="blank", class="fab fa-node-js")
+        button(class="fab fa-docker tablink", onclick="openTab('docker', this)")
+        button(class="fab fa-jenkins tablink", onclick="openTab('jenkins', this)")
+        button(class="fab fa-aws tablink", onclick="openTab('aws', this)")
+        button(class="fab fa-python tablink", onclick="openTab('python', this)")
+        button(class="fab fa-centos tablink", onclick="openTab('centos', this)")
+        button(class="fab fa-node-js tablink", onclick="openTab('node', this)")
+
+        div(id="docker", class="content")
+          p This is my Docker description
+        div(id="jenkins", class="content")
+          p This is my Jenkins description
+        div(id="aws", class="content")
+          p This is my aws description
+        div(id="python", class="content")
+          p This is my python description
+        div(id="centos", class="content")
+          p This is my centos description
+        div(id="node", class="content")
+          p This is my node description
+          
+  script(src="/javascripts/openTab.js")

@@ -4,16 +4,15 @@ $primary-color: #d9d9d9;
 
 /* Navbar Colors */
 $active-color: #a8a8a8;
-$home-hover: DodgerBlue;
-$projects-hover: #c80000;
-$social-hover: #eba407;
-$resume-hover: #028a28;
+$home-hover: #3f4b6e;
+$projects-hover: #644c6d;
+$social-hover: #a590a2;
+$resume-hover: #a76a36;
 
 /* Company brand primary colors */
 $github-black: #211f1f;
-$linkedin-blue: #0077b5;
-$docker-blue: #0db7ed;
-$jenkins-red: #d33834;
+$docker-green: #384d54;
+$jenkins-blue: #48728b;
 $aws-blue: #232F3E ;
 $python-blue: #306998;
 $centos-purple: #a14f8c;
@@ -68,7 +67,10 @@ li a#social:hover {
   overflow: hidden;
 }
 
-.active { background: $active-color; }
+.active { color: beige; }
+.active#home { background: $home-hover; }
+.active#projects { background: $projects-hover; }
+.active#resume { background: $resume-hover; }
 
 .slide_button {
   #social {
@@ -90,6 +92,7 @@ li a#social:hover {
     background-color: $primary-color;
     color: $github-black;
     overflow: hidden;
+    a:hover { background-color: $social-hover; }
   }
 
   &:hover .socialLinks {
@@ -117,77 +120,103 @@ li a#social:hover {
 }
 
 /* Home Block Content*/
-.parent-container {
-    padding-top: 150px;
-    border: none;
-    max-width: 720px;
-    margin: auto;
-    display: block;
-    background-color: $primary-color;
+#parent-container {
+  padding-top: 140px;
+  border: none;
+  max-width: 720px;
+  margin: auto;
+  display: block;
+  background-color: $primary-color;
 
-    hr {
-      width: 720px;
-      color: $github-black;
+  hr {
+    width: 720px;
+    color: $github-black;
+  }
+
+  .halved-container {
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    max-width: 720px;
+
+    .left {
+      flex: 1;
+      img {
+        -webkit-filter: grayscale(1);
+
+        &:hover {
+          -webkit-filter: grayscale(0);
+        }
+      }
     }
 
-    .halved-container {
-      display: flex;
+    .right {
+      flex: 1;
+      padding: 1rem;
+      font-size: 20px;
       margin: auto;
-      overflow: hidden;
-      max-width: 720px;
+    }
+  }
 
-      .left {
-        flex: 1;
-        img {
-          -webkit-filter: grayscale(1);
+  .interests {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 500px;
 
-          &:hover {
-            -webkit-filter: grayscale(0);
-          }
+    .tech-items {
+      display: inline-block;
+      position: relative;
+      margin: auto;
+      border-style: solid;
+
+      .tablink {
+        background-color: $primary-color;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        border: none;
+        float: left;
+        padding: 14px 16px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .content {
+        display: none;
+        padding: 50px;
+        text-align: center;
+        p {
+          color: beige;
+          padding-top: 50px;
         }
       }
 
-      .right {
-        flex: 1;
-        padding: 1rem;
-        font-size: 20px;
-        margin: auto;
-      }
+      /* Open tab button styles */
+      .open { color: beige; }
+      .open.fa-docker { background-color: $docker-green; }
+      .open.fa-jenkins { background-color: $jenkins-blue; }
+      .open.fa-aws { background-color: $aws-blue; }
+      .open.fa-python { background-color: $python-blue; }
+      .open.fa-centos { background-color: $centos-purple; }
+      .open.fa-node-js { background-color: $node-green; }
+
+      /* Tab description styles */
+      #docker { background-color: $docker-green; }
+      #jenkins { background-color: $jenkins-blue; }
+      #aws { background-color: $aws-blue; }
+      #python { background-color: $python-blue; }
+      #centos { background-color: $centos-purple; }
+      #node { background-color: $node-green; }
+
+      /* Button hover styles */
+      .fa-docker:hover { background-color: $docker-green; }
+      .fa-jenkins:hover { background-color: $jenkins-blue; }
+      .fa-aws:hover { background-color: $aws-blue; }
+      .fa-python:hover { background-color: $python-blue; }
+      .fa-centos:hover { background-color: $centos-purple; }
+      .fa-node-js:hover { background-color: $node-green; }
     }
-}
-
-.interests {
-  display: block;
-  position: relative;
-  margin: auto;
-
-  .tech-items {
-    display: inline-block;
-    position: relative;
-    margin: auto;
-    border-style: solid;
-
-    a {
-      position: relative;
-      display: inline-block;
-      border-right: solid;
-      float: left;
-      font-size: 40px;
-      text-align: center;
-      text-decoration: none;
-      &:hover { border-right-color: $github-black; }
-    }
-
-    a:last-child { border-right: none; }
   }
 }
-
-/* Company hover changes */
-.fa-github:hover { background-color: $github-black; }
-.fa-linkedin:hover { background-color: $linkedin-blue; }
-.fa-docker:hover { background-color: $docker-blue; }
-.fa-jenkins:hover { background-color: $jenkins-red; }
-.fa-aws:hover { background-color: $aws-blue; }
-.fa-python:hover { background-color: $python-blue; }
-.fa-centos:hover { background-color: $centos-purple; }
-.fa-node-js:hover { background-color: $node-green; }

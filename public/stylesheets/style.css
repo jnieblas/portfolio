@@ -33,20 +33,29 @@ li a {
   overflow: hidden; }
 
 #home:hover {
-  background-color: DodgerBlue;
+  background-color: #3f4b6e;
   color: beige; }
 
 #projects:hover {
-  background-color: #c80000;
+  background-color: #644c6d;
   color: beige; }
 
 li a#social:hover {
-  background-color: #eba407;
+  background-color: #a590a2;
   color: beige;
   overflow: hidden; }
 
 .active {
-  background: #a8a8a8; }
+  color: beige; }
+
+.active#home {
+  background: #3f4b6e; }
+
+.active#projects {
+  background: #644c6d; }
+
+.active#resume {
+  background: #a76a36; }
 
 .slide_button #social {
   overflow: hidden;
@@ -66,6 +75,8 @@ li a#social:hover {
   background-color: #d9d9d9;
   color: #211f1f;
   overflow: hidden; }
+  .slide_button .socialLinks a:hover {
+    background-color: #a590a2; }
 
 .slide_button:hover .socialLinks {
   background-color: #d9d9d9;
@@ -83,80 +94,102 @@ li a#social:hover {
 #resume {
   float: right; }
   #resume:hover {
-    background-color: #028a28;
+    background-color: #a76a36;
     color: white; }
 
 /* Home Block Content*/
-.parent-container {
-  padding-top: 150px;
+#parent-container {
+  padding-top: 140px;
   border: none;
   max-width: 720px;
   margin: auto;
   display: block;
   background-color: #d9d9d9; }
-  .parent-container hr {
+  #parent-container hr {
     width: 720px;
     color: #211f1f; }
-  .parent-container .halved-container {
+  #parent-container .halved-container {
     display: flex;
     margin: auto;
     overflow: hidden;
     max-width: 720px; }
-    .parent-container .halved-container .left {
+    #parent-container .halved-container .left {
       flex: 1; }
-      .parent-container .halved-container .left img {
+      #parent-container .halved-container .left img {
         -webkit-filter: grayscale(1); }
-        .parent-container .halved-container .left img:hover {
+        #parent-container .halved-container .left img:hover {
           -webkit-filter: grayscale(0); }
-    .parent-container .halved-container .right {
+    #parent-container .halved-container .right {
       flex: 1;
       padding: 1rem;
       font-size: 20px;
       margin: auto; }
-
-.interests {
-  display: block;
-  position: relative;
-  margin: auto; }
-  .interests .tech-items {
-    display: inline-block;
+  #parent-container .interests {
+    display: block;
     position: relative;
     margin: auto;
-    border-style: solid; }
-    .interests .tech-items a {
-      position: relative;
+    width: 500px; }
+    #parent-container .interests .tech-items {
       display: inline-block;
-      border-right: solid;
-      float: left;
-      font-size: 40px;
-      text-align: center;
-      text-decoration: none; }
-      .interests .tech-items a:hover {
-        border-right-color: #211f1f; }
-    .interests .tech-items a:last-child {
-      border-right: none; }
-
-/* Company hover changes */
-.fa-github:hover {
-  background-color: #211f1f; }
-
-.fa-linkedin:hover {
-  background-color: #0077b5; }
-
-.fa-docker:hover {
-  background-color: #0db7ed; }
-
-.fa-jenkins:hover {
-  background-color: #d33834; }
-
-.fa-aws:hover {
-  background-color: #232F3E; }
-
-.fa-python:hover {
-  background-color: #306998; }
-
-.fa-centos:hover {
-  background-color: #a14f8c; }
-
-.fa-node-js:hover {
-  background-color: #215732; }
+      position: relative;
+      margin: auto;
+      border-style: solid;
+      /* Open tab button styles */
+      /* Tab description styles */
+      /* Button hover styles */ }
+      #parent-container .interests .tech-items .tablink {
+        background-color: #d9d9d9;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        border: none;
+        float: left;
+        padding: 14px 16px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none; }
+      #parent-container .interests .tech-items .content {
+        display: none;
+        padding: 50px;
+        text-align: center; }
+        #parent-container .interests .tech-items .content p {
+          color: beige;
+          padding-top: 50px; }
+      #parent-container .interests .tech-items .open {
+        color: beige; }
+      #parent-container .interests .tech-items .open.fa-docker {
+        background-color: #384d54; }
+      #parent-container .interests .tech-items .open.fa-jenkins {
+        background-color: #48728b; }
+      #parent-container .interests .tech-items .open.fa-aws {
+        background-color: #232F3E; }
+      #parent-container .interests .tech-items .open.fa-python {
+        background-color: #306998; }
+      #parent-container .interests .tech-items .open.fa-centos {
+        background-color: #a14f8c; }
+      #parent-container .interests .tech-items .open.fa-node-js {
+        background-color: #215732; }
+      #parent-container .interests .tech-items #docker {
+        background-color: #384d54; }
+      #parent-container .interests .tech-items #jenkins {
+        background-color: #48728b; }
+      #parent-container .interests .tech-items #aws {
+        background-color: #232F3E; }
+      #parent-container .interests .tech-items #python {
+        background-color: #306998; }
+      #parent-container .interests .tech-items #centos {
+        background-color: #a14f8c; }
+      #parent-container .interests .tech-items #node {
+        background-color: #215732; }
+      #parent-container .interests .tech-items .fa-docker:hover {
+        background-color: #384d54; }
+      #parent-container .interests .tech-items .fa-jenkins:hover {
+        background-color: #48728b; }
+      #parent-container .interests .tech-items .fa-aws:hover {
+        background-color: #232F3E; }
+      #parent-container .interests .tech-items .fa-python:hover {
+        background-color: #306998; }
+      #parent-container .interests .tech-items .fa-centos:hover {
+        background-color: #a14f8c; }
+      #parent-container .interests .tech-items .fa-node-js:hover {
+        background-color: #215732; }
