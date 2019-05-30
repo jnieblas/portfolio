@@ -45,27 +45,8 @@ body {
         background-color: $secondary-color;
       }
 
-      .slide_button {
-        #social {
-          overflow: hidden;
-          cursor: pointer;
-          float: left;
-          background-color: $primary-color;
-          color: $secondary-color;
-          padding: 14px 16px;
-          font-size: 17px;
-          text-align: center;
-          text-decoration: none;
-          border: none;
-
-          &:hover {
-            background-color: $tertiary-color;
-            color: $primary-color;
-            overflow: hidden;
-          }
-        }
-
-        .socialLinks {
+      #connect-container {
+        #connect-items {
           font-size: 1.4em;
           display: none;
           position: relative;
@@ -74,7 +55,7 @@ body {
           color: $secondary-color;
           overflow: hidden;
 
-          .fab {
+          .item {
             font-size: 1.4em;
             padding: 14px 16px;
             float: left;
@@ -87,7 +68,8 @@ body {
           }
         }
 
-        &:hover .socialLinks {
+        &:hover #connect-items {
+          transition: ease-out;
           background-color: $primary-color;
           display: inline;
         }

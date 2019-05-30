@@ -32,22 +32,7 @@ body {
     body ul li .active {
       color: #dfe1e5;
       background-color: #161d26; }
-    body ul li .slide_button #social {
-      overflow: hidden;
-      cursor: pointer;
-      float: left;
-      background-color: #dfe1e5;
-      color: #161d26;
-      padding: 14px 16px;
-      font-size: 17px;
-      text-align: center;
-      text-decoration: none;
-      border: none; }
-      body ul li .slide_button #social:hover {
-        background-color: #c13804;
-        color: #dfe1e5;
-        overflow: hidden; }
-    body ul li .slide_button .socialLinks {
+    body ul li #connect-container #connect-items {
       font-size: 1.4em;
       display: none;
       position: relative;
@@ -55,15 +40,16 @@ body {
       background-color: #dfe1e5;
       color: #161d26;
       overflow: hidden; }
-      body ul li .slide_button .socialLinks .fab {
+      body ul li #connect-container #connect-items .item {
         font-size: 1.4em;
         padding: 14px 16px;
         float: left;
         color: #161d26; }
-      body ul li .slide_button .socialLinks a:hover {
+      body ul li #connect-container #connect-items a:hover {
         color: #dfe1e5;
         background-color: #c13804; }
-    body ul li .slide_button:hover .socialLinks {
+    body ul li #connect-container:hover #connect-items {
+      transition: ease-out;
       background-color: #dfe1e5;
       display: inline; }
     body ul li #resume {
