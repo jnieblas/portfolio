@@ -1,222 +1,191 @@
-/* Color variables */
 /* Site Theme Colors*/
-$primary-color: #d9d9d9;
-
-/* Navbar Colors */
-$active-color: #a8a8a8;
-$home-hover: #3f4b6e;
-$projects-hover: #644c6d;
-$social-hover: #a590a2;
-$resume-hover: #a76a36;
-
-/* Company brand primary colors */
-$github-black: #211f1f;
-$docker-green: #384d54;
-$jenkins-blue: #48728b;
-$aws-blue: #232F3E ;
-$python-blue: #306998;
-$centos-purple: #a14f8c;
-$node-green: #215732;
+$primary-color: #dfe1e5;
+$secondary-color: #161d26;
+$tertiary-color: #c13804;
 
 /* Layout Content */
 body {
   background-color: $primary-color;
+  color: $secondary-color;
   text-align: center;
-  font: 14px "Helvetica";
-  color: $github-black;
-}
+  font: 14px "Yu Gothic";
 
-ul {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-  background-color: $primary-color;
-  overflow: hidden;
-}
-
-li a {
-  font: Cambria;
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  color: $github-black;
-  overflow: hidden;
-}
-
-#home:hover {
-  background-color: $home-hover;
-  color: beige;
-}
-
-#projects:hover {
-  background-color: $projects-hover;
-  color: beige;
-}
-
-li a#social:hover {
-  background-color: $social-hover;
-  color: beige;
-  overflow: hidden;
-}
-
-.active { color: beige; }
-.active#home { background: $home-hover; }
-.active#projects { background: $projects-hover; }
-.active#resume { background: $resume-hover; }
-
-.slide_button {
-  #social {
-    overflow: hidden;
-    cursor: pointer;
-    float: left;
+  ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
     background-color: $primary-color;
-    color: $github-black;
-    padding: 14px 16px;
-    font-size: 17px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-  }
-
-  .socialLinks {
-    display: none;
-    position: relative;
-    background-color: $primary-color;
-    color: $github-black;
     overflow: hidden;
-    a:hover { background-color: $social-hover; }
-  }
 
-  &:hover .socialLinks {
-    background-color: $primary-color;
-    display: inline;
-  }
-}
-
-.fab {
-  font-size: 1.4em;
-  padding: 14px 16px;
-  float: left;
-  transition-timing-function: ease-out;
-  color: $github-black;
-  &:hover { color: beige; }
-}
-
-#resume {
-  float: right;
-
-  &:hover {
-    background-color: $resume-hover;
-    color: white;
-  }
-}
-
-/* Home Block Content*/
-#parent-container {
-  padding-top: 140px;
-  border: none;
-  max-width: 720px;
-  margin: auto;
-  display: block;
-  background-color: $primary-color;
-
-  hr {
-    width: 720px;
-    color: $github-black;
-  }
-
-  .halved-container {
-    display: flex;
-    margin: auto;
-    overflow: hidden;
-    max-width: 720px;
-
-    .left {
-      flex: 1;
-      img {
-        -webkit-filter: grayscale(1);
+    li {
+      a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: $secondary-color;
+        overflow: hidden;
 
         &:hover {
-          -webkit-filter: grayscale(0);
+          background-color: $tertiary-color;
+          color: $primary-color;
         }
       }
-    }
 
-    .right {
-      flex: 1;
-      padding: 1rem;
-      font-size: 20px;
-      margin: auto;
+      .active {
+        color: $primary-color;
+        background-color: $secondary-color;
+      }
+
+      .slide_button {
+        #social {
+          overflow: hidden;
+          cursor: pointer;
+          float: left;
+          background-color: $primary-color;
+          color: $secondary-color;
+          padding: 14px 16px;
+          font-size: 17px;
+          text-align: center;
+          text-decoration: none;
+          border: none;
+
+          &:hover {
+            background-color: $tertiary-color;
+            color: $primary-color;
+            overflow: hidden;
+          }
+        }
+
+        .socialLinks {
+          font-size: 1.4em;
+          display: none;
+          position: relative;
+          float: left;
+          background-color: $primary-color;
+          color: $secondary-color;
+          overflow: hidden;
+
+          .fab {
+            font-size: 1.4em;
+            padding: 14px 16px;
+            float: left;
+            color: $secondary-color;
+          }
+
+          a:hover {
+            color: $primary-color;
+            background-color: $tertiary-color;
+          }
+        }
+
+        &:hover .socialLinks {
+          background-color: $primary-color;
+          display: inline;
+        }
+      }
+
+      #resume {
+        float: right;
+
+        &:hover {
+          background-color: $tertiary-color;
+          color: white;
+        }
+      }
     }
   }
 
-  .interests {
-    display: block;
-    position: relative;
+  /* Home Block Content*/
+  #parent-container {
+    padding-top: 120px;
+    border: none;
+    max-width: 720px;
     margin: auto;
-    width: 500px;
+    display: block;
+    background-color: $primary-color;
 
-    .tech-items {
-      display: inline-block;
-      position: relative;
+    hr {
+      width: 720px;
+      color: $secondary-color;
+    }
+
+    .halved-container {
+      display: flex;
       margin: auto;
-      border-style: solid;
+      overflow: hidden;
+      max-width: 720px;
 
-      .tablink {
-        background-color: $primary-color;
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-        border: none;
-        float: left;
-        padding: 14px 16px;
-        font-size: 40px;
-        text-align: center;
-        text-decoration: none;
-      }
-
-      .content {
-        display: none;
-        padding: 50px;
-        text-align: center;
-        p {
-          color: beige;
-          padding-top: 50px;
+      .left {
+        flex: 1;
+        img {
+          -webkit-filter: saturate(1.3);
         }
       }
 
-      /* Open tab button styles */
-      .open { color: beige; }
-      .open.fa-docker { background-color: $docker-green; }
-      .open.fa-jenkins { background-color: $jenkins-blue; }
-      .open.fa-aws { background-color: $aws-blue; }
-      .open.fa-python { background-color: $python-blue; }
-      .open.fa-centos { background-color: $centos-purple; }
-      .open.fa-node-js { background-color: $node-green; }
+      .right {
+        flex: 1;
+        padding: 1rem;
+        font-size: 20px;
+        margin: auto;
+      }
+    }
 
-      /* Tab description styles */
-      #docker { background-color: $docker-green; }
-      #jenkins { background-color: $jenkins-blue; }
-      #aws { background-color: $aws-blue; }
-      #python { background-color: $python-blue; }
-      #centos { background-color: $centos-purple; }
-      #node { background-color: $node-green; }
+    .interests {
+      display: block;
+      position: relative;
+      margin: auto;
+      width: 500px;
 
-      /* Button hover styles */
-      .fa-docker:hover { background-color: $docker-green; }
-      .fa-jenkins:hover { background-color: $jenkins-blue; }
-      .fa-aws:hover { background-color: $aws-blue; }
-      .fa-python:hover { background-color: $python-blue; }
-      .fa-centos:hover { background-color: $centos-purple; }
-      .fa-node-js:hover { background-color: $node-green; }
+      .tech-items {
+        display: inline-block;
+        position: relative;
+        margin: auto;
+        border-style: solid;
+        border-color: $secondary-color;
+
+        .tablink {
+          color: $secondary-color;
+          background-color: $primary-color;
+          cursor: pointer;
+          position: relative;
+          display: inline-block;
+          border: none;
+          float: left;
+          padding: 14px 16px;
+          font-size: 40px;
+          text-align: center;
+          text-decoration: none;
+
+          &:hover{
+            color: $primary-color;
+            background-color: $tertiary-color; }
+        }
+
+        .content {
+          display: none;
+          padding: 50px;
+          text-align: center;
+          background-color: $secondary-color;
+          p {
+            color: $primary-color;
+            padding-top: 50px;
+          }
+        }
+
+        /* Open tab button styles */
+        .open {
+          color: $primary-color;
+          background-color: $secondary-color;
+        }
+      }
     }
   }
 }
