@@ -1,4 +1,37 @@
 extends layout
 
 block content
-    h1= title
+  div(id="parent-container")
+    hr
+    div(class="tab-menu")
+      h1 Some recent projects
+      div(class="items")
+        button(id="default", class="fas fa-bug tablink projects",
+          onclick="openTab('hpotter', this)")  HPotter
+        button(class="fas fa-calculator tablink projects",
+          onclick="openTab('algs', this)")  Algs
+        button(class="fas fa-code tablink projects",
+          onclick="openTab('p11', this)")  P11
+        button(class="fas fa-underline tablink projects",
+          onclick="openTab('sequence-alignment', this)")  Sequence
+
+        div(id="hpotter", class="content")
+          p This is my HPotter description
+          a(href="https://github.com/drsjb80/HPotter",
+            target="blank") GitHub Repo
+        div(id="algs", class="content")
+          p This is my Algs description
+          a(href="https://github.com/jonnieblas/Algs",
+            target="blank") GitHub Repo
+        div(id="p11", class="content")
+          p This is my P11 description
+          a(href="https://github.com/jonnieblas/P11",
+            target="blank") GitHub Repo
+        div(id="sequence-alignment", class="content")
+          p This is my sequence-alignment description
+          a(href="https://github.com/jonnieblas/sequence-alignment",
+            target="blank") GitHub Repo
+
+    br
+    hr
+  script(src="/javascripts/openTab.js")

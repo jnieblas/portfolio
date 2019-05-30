@@ -2,6 +2,7 @@
 $primary-color: #dfe1e5;
 $secondary-color: #161d26;
 $tertiary-color: #c13804;
+$link-color: #8ea6b9;
 
 /* Layout Content */
 body {
@@ -138,13 +139,12 @@ body {
       }
     }
 
-    .interests {
+    .tab-menu {
       display: block;
       position: relative;
       margin: auto;
-      width: 500px;
 
-      .tech-items {
+      .items {
         display: inline-block;
         position: relative;
         margin: auto;
@@ -160,7 +160,6 @@ body {
           border: none;
           float: left;
           padding: 14px 16px;
-          font-size: 40px;
           text-align: center;
           text-decoration: none;
 
@@ -169,14 +168,22 @@ body {
             background-color: $tertiary-color; }
         }
 
+        .tech { font-size: 40px; }
+
+        .projects { font-size: 30px; }
+
         .content {
           display: none;
           padding: 50px;
           text-align: center;
           background-color: $secondary-color;
-          p {
-            color: $primary-color;
-            padding-top: 50px;
+          color: $primary-color;
+
+          p { padding-top: 50px;}
+
+          a {
+            color: $link-color;
+            text-decoration: none;
           }
         }
 

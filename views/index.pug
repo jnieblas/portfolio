@@ -11,24 +11,23 @@ block content
         article
           h1 My name is Jonathan Nieblas and I love to code.
           p
-            | Thanks for checking out my site! I've compiled a collection
-            | of different projects, interests, and skills that I think
-            | best represent me. Please, feel free to take a look around.
+            | Thanks for checking out my site!
+            | Please, feel free to take a look around.
             | If you have any questions or would just like to
             | chat, shoot me an email or connect with me on LinkedIn!
     br
     hr
     br
 
-    div(class="interests")
+    div(class="tab-menu")
       h1 Tech I'm currently fascinated with:
-      div(class="tech-items")
-        button(class="fab fa-docker tablink", onclick="openTab('docker', this)")
-        button(class="fab fa-jenkins tablink", onclick="openTab('jenkins', this)")
-        button(class="fab fa-aws tablink", onclick="openTab('aws', this)")
-        button(class="fab fa-python tablink", onclick="openTab('python', this)")
-        button(class="fab fa-centos tablink", onclick="openTab('centos', this)")
-        button(class="fab fa-node-js tablink", onclick="openTab('node', this)")
+      div(class="items")
+        button(class="fab fa-docker tablink tech", onclick="openTab('docker', this)")
+        button(class="fab fa-jenkins tablink tech", onclick="openTab('jenkins', this)")
+        button(class="fab fa-aws tablink tech", onclick="openTab('aws', this)")
+        button(class="fab fa-python tablink tech", onclick="openTab('python', this)")
+        button(class="fab fa-centos tablink tech", onclick="openTab('centos', this)")
+        button(class="fab fa-node-js tablink tech", onclick="openTab('node', this)")
 
         div(id="docker", class="content")
           p This is my Docker description
