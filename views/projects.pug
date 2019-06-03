@@ -4,7 +4,7 @@ block content
   div(id="parent-container")
     hr
     div(class="tab-menu")
-      h1 Some recent projects
+      h1 Recent Projects
       div(class="items")
         button(id="default", class="fas fa-bug tablink projects",
           onclick="openTab('hpotter', this)")  HPotter
@@ -15,22 +15,91 @@ block content
         button(class="fas fa-underline tablink projects",
           onclick="openTab('sequence-alignment', this)")  Sequence
 
-        div(id="hpotter", class="content")
-          p This is my HPotter description
+        div(id="hpotter", class="content proj-item")
+          br
+          br
+          p
+          | HPotter is a simple to run honey pot, providing a network with
+          | an extra level of security. When HPotter is deployed on a network, it
+          | acts as a mock computer, attracting and reporting any attacks it receives.
+          | Analyzing attacks will allow one to build a security system that
+          | covers more bases, preventing future attacks across all networks.
+          br
+          p
+          | HPotter was a great opportunity for me to learn about long-term group
+          | project development. Throughout our six month agile SDLC, I had
+          | the chance to operate in a team of five as the Tech Lead, Product Owner,
+          | and Scrum Master.
+          br
+          p HPotter utilizes: Python, Docker, SQLite, Trello, and GitHub
           a(href="https://github.com/drsjb80/HPotter",
-            target="blank") GitHub Repo
-        div(id="algs", class="content")
-          p This is my Algs description
+            target="blank") Repository
+        div(id="algs", class="content proj-item")
+          br
+          br
+          p
+          | Algs is a small site containing a few different algorithms, brief
+          | explanations of the algorithms, as well as calculators demonstrating
+          | how they work. My goal with Algs was to learn how to code different algorithms,
+          | further expanding my algorithmic knowledge and problem solving skills.
+          | I also wanted to learn more about Docker and Jenkins, so Algs has
+          | given me a perfect setting for experimenting with containerization and
+          | continuous integration.
+          br
+          p
+          | Algs is currently under construction. After I add a few more calculators,
+          | I hope to deploy it and have it as a viewable website for those that
+          | are interested.
+          br
+          p
+          | Algs utilizes: Node.js, Express.js, Python, Docker, Jenkins,
+          | Trello, and GitHub
+          br
+          br
           a(href="https://github.com/jonnieblas/Algs",
-            target="blank") GitHub Repo
-        div(id="p11", class="content")
-          p This is my P11 description
+            target="blank") Repository
+        div(id="p11", class="content proj-item")
+          br
+          br
+          p
+          | P11 is a Lisp-like programming language that is transcompiled using
+          | Java. With P11, one can build simple programs that are recursively
+          | broken down into tokens, examined by the parser, and then evaluated.
+          | I helped to construct P11 in a group of six, where I took the lead
+          | in code design and implementation. The grammar for the language
+          | was designed by Dr. Jerry Shultz and my Principles of Programming
+          | Languages class.
+          br
+          p
+          | P11 is nearly complete, although I may add a few more built in functions
+          | to further extend the use of the small language. If you have
+          | any interest in experimenting with P11 or learning more about the grammar
+          | we designed, please check out the repo and the readme!
+          br
+          p P11 utilizes: Java, GitHub, and Docker
           a(href="https://github.com/jonnieblas/P11",
-            target="blank") GitHub Repo
-        div(id="sequence-alignment", class="content")
-          p This is my sequence-alignment description
+            target="blank") Repository
+        div(id="sequence-alignment", class="content proj-item")
+          br
+          br
+          p
+          | Sequence is a small coding project that looks to solve the sequence
+          | alignment problem using dynamic programming.
+          | When given two strings, how does one program an
+          | algorithm capable of aligning the strings so that they match as
+          | closely as possible? The two strings would ideally be the same length,
+          | with each character in the first string matching each character in
+          | the second.
+          br
+          p
+          | Fortunately, the sequence alignment problem can be solved by building
+          | a table full of values that help to align the sequences based on scores
+          | for each index. For further explanation and code to experiment with,
+          | please check out my repository.
+          br
+          p Sequence utilizes: Java and GitHub
           a(href="https://github.com/jonnieblas/sequence-alignment",
-            target="blank") GitHub Repo
+            target="blank") Repository
 
     br
     hr

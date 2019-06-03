@@ -166,20 +166,28 @@ body {
 
         .content {
           display: none;
-          padding: 50px;
-          padding-bottom: 5px;
           text-align: center;
           background-color: $secondary-color;
           color: $primary-color;
-
-          p {
-            padding-top: 25px;
-            max-width: 335px;}
 
           a {
             color: $link-color;
             text-decoration: underline;
           }
+        }
+
+        .tech-item {
+          padding: 50px;
+          padding-bottom: 5px;
+          p {
+            padding-top: 25px;
+            max-width: 335px;
+          }
+        }
+
+        .proj-item {
+          padding: 30px;
+          max-width: 545px;
         }
 
         /* Open tab button styles */

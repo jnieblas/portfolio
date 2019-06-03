@@ -123,17 +123,21 @@ body {
           padding: 4px 8px; }
         body #parent-container .tab-menu .items .content {
           display: none;
-          padding: 50px;
-          padding-bottom: 5px;
           text-align: center;
           background-color: #161d26;
           color: #dfe1e5; }
-          body #parent-container .tab-menu .items .content p {
-            padding-top: 25px;
-            max-width: 335px; }
           body #parent-container .tab-menu .items .content a {
             color: #8ea6b9;
             text-decoration: underline; }
+        body #parent-container .tab-menu .items .tech-item {
+          padding: 50px;
+          padding-bottom: 5px; }
+          body #parent-container .tab-menu .items .tech-item p {
+            padding-top: 25px;
+            max-width: 335px; }
+        body #parent-container .tab-menu .items .proj-item {
+          padding: 30px;
+          max-width: 545px; }
         body #parent-container .tab-menu .items .open {
           color: #dfe1e5;
           background-color: #161d26; }
