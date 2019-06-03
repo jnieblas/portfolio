@@ -58,7 +58,7 @@ body {
         background-color: #c13804;
         color: white; }
   body #parent-container {
-    padding-top: 120px;
+    padding-top: 100px;
     border: none;
     max-width: 720px;
     margin: auto;
@@ -106,21 +106,34 @@ body {
           body #parent-container .tab-menu .items .tablink:hover {
             color: #dfe1e5;
             background-color: #c13804; }
+
+@font-face {
+  body #parent-container .tab-menu .items {
+    font-family: 'devicons';
+    src: url("../fonts/devicons.eot?xqxft6");
+    src: url("../fonts/devicons.eot?#iefixxqxft6") format("embedded-opentype"), url("../fonts/devicons.woff?xqxft6") format("woff"), url("../fonts/devicons.ttf?xqxft6") format("truetype"), url("../fonts/devicons.svg?xqxft6#devicons") format("svg");
+    font-weight: normal;
+    font-style: normal; } }
         body #parent-container .tab-menu .items .tech {
           font-size: 40px; }
         body #parent-container .tab-menu .items .projects {
           font-size: 30px; }
+        body #parent-container .tab-menu .items .devicons {
+          font-size: 60px;
+          padding: 4px 8px; }
         body #parent-container .tab-menu .items .content {
           display: none;
           padding: 50px;
+          padding-bottom: 5px;
           text-align: center;
           background-color: #161d26;
           color: #dfe1e5; }
           body #parent-container .tab-menu .items .content p {
-            padding-top: 50px; }
+            padding-top: 25px;
+            max-width: 335px; }
           body #parent-container .tab-menu .items .content a {
             color: #8ea6b9;
-            text-decoration: none; }
+            text-decoration: underline; }
         body #parent-container .tab-menu .items .open {
           color: #dfe1e5;
           background-color: #161d26; }

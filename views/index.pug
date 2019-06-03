@@ -1,6 +1,7 @@
 extends layout
-
 block content
+  <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'
+  | rel='stylesheet'>
   div(id="parent-container")
     hr
     br
@@ -26,20 +27,52 @@ block content
         button(class="fab fa-jenkins tablink tech", onclick="openTab('jenkins', this)")
         button(class="fab fa-aws tablink tech", onclick="openTab('aws', this)")
         button(class="fab fa-python tablink tech", onclick="openTab('python', this)")
-        button(class="fab fa-centos tablink tech", onclick="openTab('centos', this)")
+        button(class="devicons devicons-rust tablink tech", onclick="openTab('rust', this)")
         button(class="fab fa-node-js tablink tech", onclick="openTab('node', this)")
 
         div(id="docker", class="content")
-          p This is my Docker description
+          p
+            | #[a(href='https://www.docker.com/', target='blank') Docker]
+            | is such a versatile tool. Being able to isolate services,
+            | while making them platform independent has made it hard not
+            | to incorporate Docker into all of my projects. Also,
+            | the amount of images to experiment with on DockerHub is incredible!
         div(id="jenkins", class="content")
-          p This is my Jenkins description
+          p
+            | #[a(href='https://www.jenkins.io', target='blank') Jenkins]
+            | is a technology that I've made a priority to learn.
+            | Continuous integration is an import concept for any project,
+            | especially those that are growing rapidly; there's no doubt that understanding
+            | CI tools will be a valuable asset for any developer.
         div(id="aws", class="content")
-          p This is my aws description
+          p
+            | #[a(href='https://aws.amazon.com/', target='blank') AWS]
+            | has always been one of those technologies that I wish I
+            | could build with more, as I haven't had many opportunities to thus far.
+            | I plan on getting a Raspberry Pi or two and diving deep into some
+            | of the different services AWS has to offer.
         div(id="python", class="content")
-          p This is my python description
-        div(id="centos", class="content")
-          p This is my centos description
+          p
+            | #[a(href='https://www.python.org/', target='blank') Python]
+            | has to be one of the most enjoyable programming languages out there.
+            | Whenever I want to build a one day project, Python is my go to.
+            | Its simplicity and well-written documentation give Python an
+            | efficiency that is hard to contend with.
+        div(id="rust", class="content")
+          p
+            | #[a(href='https://www.rust-lang.org/', target='blank') Rust]
+            | caught my eye after hearing about how memory safe it is. C
+            | and C++ have aged very poorly, as the absence of safety features
+            | have caused code bases built from these languages to be dangerous
+            | and unreliable. Rust seems like a decent solution if it can
+            | gain enough traction.
         div(id="node", class="content")
-          p This is my node description
+          p
+            | #[a(href='https://nodejs.org/en/', target='blank') Node.js]
+            | is an enigma: is it a framework, a run-time environment,
+            | a language, or all of the above? None can really say, although one
+            | of my #[a(href='https://softwareengineering.stackexchange.com/questions/299152/is-node-js-a-framework', target='blank') favorite discussions]
+            | on it helps to break down how one might go about classifying Node.
+            | Note: This site was created using Node & Express &#x1F601;
 
   script(src="/javascripts/openTab.js")
