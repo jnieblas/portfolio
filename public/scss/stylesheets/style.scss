@@ -187,7 +187,12 @@ body {
         }
         .projects {
           font-size: 30px;
-          @media(max-width: 615px){ font-size: 20px; }
+          @media(max-width: 615px){
+            font-size: 20px;
+            @media(max-width: 450px){
+              font-size: 15px;
+            }
+          }
         }
         .devicons{
           font-size: 60px;
@@ -222,7 +227,12 @@ body {
           width: 565px;
           padding: 20px;
 
-          @media (max-width: 615px){ width: 407px; }
+          @media (max-width: 615px){
+            width: 407px;
+            @media (max-width: 450px){
+              width: 327px;
+            }
+          }
         }
 
         /* Open tab button styles */

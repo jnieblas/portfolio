@@ -159,6 +159,9 @@ body {
           @media (max-width: 615px) {
             body #parent-container .tab-menu .items .projects {
               font-size: 20px; } }
+  @media (max-width: 615px) and (max-width: 450px) {
+    body #parent-container .tab-menu .items .projects {
+      font-size: 15px; } }
         body #parent-container .tab-menu .items .devicons {
           font-size: 60px;
           padding: 4px 8px; }
@@ -192,6 +195,9 @@ body {
           @media (max-width: 615px) {
             body #parent-container .tab-menu .items .proj-item {
               width: 407px; } }
+  @media (max-width: 615px) and (max-width: 450px) {
+    body #parent-container .tab-menu .items .proj-item {
+      width: 327px; } }
         body #parent-container .tab-menu .items .open {
           color: #dfe1e5;
           background-color: #161d26; }
