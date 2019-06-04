@@ -5,7 +5,7 @@ block content
     hr
     div(class="tab-menu")
       h1 Recent Projects
-      div(class="items")
+      div(class="items proj-container")
         button(id="default", class="fas fa-bug tablink projects",
           onclick="openTab('hpotter', this)")  HPotter
         button(class="fas fa-calculator tablink projects",
@@ -103,6 +103,7 @@ block content
           a(href="https://github.com/jonnieblas/sequence-alignment",
             target="blank") Repository
 
+    br
     br
     hr
   script(src="/javascripts/openTab.js")

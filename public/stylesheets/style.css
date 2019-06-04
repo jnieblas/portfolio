@@ -2,8 +2,7 @@
 /* Layout Content */
 html {
   width: 95%;
-  margin: auto;
-  padding-right: 18px; }
+  margin: auto; }
 
 body {
   height: 100%;
@@ -73,20 +72,20 @@ body {
     display: block;
     background-color: #dfe1e5;
     overflow: hidden; }
-    @media (max-width: 750px) {
+    @media only screen and (max-width: 750px) {
       body #parent-container {
         width: 100%;
         margin: auto; } }
     body #parent-container .h1 {
       width: 720px; }
-      @media (max-width: 750px) {
+      @media only screen and (max-width: 750px) {
         body #parent-container .h1 {
           width: 100%; } }
     body #parent-container hr {
       width: 720px;
       color: #161d26;
       margin: auto; }
-      @media (max-width: 750px) {
+      @media only screen and (max-width: 750px) {
         body #parent-container hr {
           width: 100%; } }
     body #parent-container .halved-container {
@@ -94,7 +93,7 @@ body {
       margin: auto;
       overflow: hidden;
       width: 720px; }
-      @media (max-width: 750px) {
+      @media only screen and (max-width: 750px) {
         body #parent-container .halved-container {
           width: 100%; } }
       body #parent-container .halved-container .left {
@@ -103,7 +102,7 @@ body {
         margin: auto; }
         body #parent-container .halved-container .left img {
           -webkit-filter: saturate(1.3); }
-        @media (max-width: 750px) {
+        @media only screen and (max-width: 750px) {
           body #parent-container .halved-container .left {
             padding-left: 15px; } }
       body #parent-container .halved-container .right {
@@ -120,12 +119,16 @@ body {
       position: relative;
       margin: auto;
       text-align: center; }
+      @media only screen and (max-width: 377px) {
+        body #parent-container .tab-menu .tech-container {
+          width: 346px; } }
       body #parent-container .tab-menu .items {
         display: inline-block;
         position: relative;
         margin: auto;
         border-style: solid;
         border-color: #161d26;
+        background-color: #161d26;
         /* Open tab button styles */ }
         body #parent-container .tab-menu .items .tablink {
           color: #161d26;
@@ -151,23 +154,32 @@ body {
     font-style: normal; } }
         body #parent-container .tab-menu .items .tech {
           font-size: 40px; }
-          @media (max-width: 600px) {
+          @media only screen and (max-width: 600px) {
             body #parent-container .tab-menu .items .tech {
               font-size: 30px; } }
+  @media only screen and (max-width: 600px) and (max-width: 377px) {
+    body #parent-container .tab-menu .items .tech {
+      font-size: 25px; } }
         body #parent-container .tab-menu .items .projects {
           font-size: 30px; }
-          @media (max-width: 615px) {
+          @media only screen and (max-width: 615px) {
             body #parent-container .tab-menu .items .projects {
               font-size: 20px; } }
-  @media (max-width: 615px) and (max-width: 450px) {
+  @media only screen and (max-width: 615px) and (max-width: 450px) {
     body #parent-container .tab-menu .items .projects {
       font-size: 15px; } }
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 377px) {
+    body #parent-container .tab-menu .items .projects {
+      font-size: 13px; } }
         body #parent-container .tab-menu .items .devicons {
           font-size: 60px;
           padding: 4px 8px; }
-          @media (max-width: 600px) {
+          @media only screen and (max-width: 600px) {
             body #parent-container .tab-menu .items .devicons {
               font-size: 50px; } }
+  @media only screen and (max-width: 600px) and (max-width: 377px) {
+    body #parent-container .tab-menu .items .devicons {
+      font-size: 45px; } }
         body #parent-container .tab-menu .items .content {
           display: none;
           text-align: center;
@@ -186,29 +198,35 @@ body {
           width: 337px; }
           body #parent-container .tab-menu .items .tech-item p {
             padding-top: 25px; }
-          @media (max-width: 600px) {
+          @media only screen and (max-width: 600px) {
             body #parent-container .tab-menu .items .tech-item {
               width: 276px; } }
+  @media only screen and (max-width: 600px) and (max-width: 377px) {
+    body #parent-container .tab-menu .items .tech-item {
+      width: 248px; } }
         body #parent-container .tab-menu .items .proj-item {
           width: 565px;
           padding: 20px; }
-          @media (max-width: 615px) {
+          @media only screen and (max-width: 615px) {
             body #parent-container .tab-menu .items .proj-item {
               width: 407px; } }
-  @media (max-width: 615px) and (max-width: 450px) {
+  @media only screen and (max-width: 615px) and (max-width: 450px) {
     body #parent-container .tab-menu .items .proj-item {
       width: 327px; } }
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 377px) {
+    body #parent-container .tab-menu .items .proj-item {
+      width: 295px; } }
         body #parent-container .tab-menu .items .open {
           color: #dfe1e5;
           background-color: #161d26; }
 
 /* Loader courtesy of https://loading.io/css/ */
 #lds-grid {
-  position: absolute;
+  position: fixed;
   display: inline-block;
-  left: 55%;
+  left: 50%;
   top: 50%;
-  margin: -75px 0 0 -75px;
+  transform: translate(-50%, -50%);
   z-index: 1;
   width: 64px;
   height: 64px; }
