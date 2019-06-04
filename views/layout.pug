@@ -8,27 +8,30 @@ doctype html
 head
   title= title
   script(src="/jquery/jquery.js")
+  script(src="/javascripts/loadPage.js")
   link(rel='stylesheet', href='/stylesheets/style.css')
-body
-  ul(id="navbar-tabs")
-    li
-      a(id="home", href="/") #[strong Home]
-    li
-      a(id="projects", href="/projects") #[strong Projects]
-    li
-      div(id="connect-container")
-        a(href="#") #[strong Connect]
-        div(id="connect-items")
-          a(href="https://www.github.com/jonnieblas", target="_blank",
-           class="fab fa-github item")
-          a(href="https://www.linkedin.com/in/jonathan-nieblas-aa8909174/",
-            target="_blank", class="fab fa-linkedin item")
-          a(href="mailto:Jonathan.Nieblas@outlook.com", target="_top",
-            class="far fa-envelope item")
-    li
-      a(id="resume", href="/files/Jonathan_Nieblas_Res.pdf",
-       target="blank") #[strong Resume]
-  script(src="/javascripts/AddActive.js")
-  block content
+body(onload="load()", style="margin:0;")
+  <div id="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  div(id="stuff", style="display:none;")
+    ul(id="navbar-tabs")
+      li
+        a(id="home", href="/") #[strong Home]
+      li
+        a(id="projects", href="/projects") #[strong Projects]
+      li
+        div(id="connect-container")
+          a(href="#") #[strong Connect]
+          div(id="connect-items")
+            a(href="https://www.github.com/jonnieblas", target="_blank",
+             class="fab fa-github item")
+            a(href="https://www.linkedin.com/in/jonathan-nieblas-aa8909174/",
+              target="_blank", class="fab fa-linkedin item")
+            a(href="mailto:Jonathan.Nieblas@outlook.com", target="_top",
+              class="far fa-envelope item")
+      li
+        a(id="resume", href="/files/Jonathan_Nieblas_Res.pdf",
+         target="blank") #[strong Resume]
+    script(src="/javascripts/AddActive.js")
+    block content
 
-  include foot.pug
+    include foot.pug
