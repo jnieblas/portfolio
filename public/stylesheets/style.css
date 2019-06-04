@@ -109,7 +109,7 @@ body {
       body #parent-container .halved-container .right {
         flex: 1;
         margin: auto;
-        font-size: 19px;
+        font-size: 20px;
         text-align: center;
         padding-left: 15px; }
         @media (max-width: 750px) {
@@ -170,7 +170,8 @@ body {
           text-align: center;
           background-color: #161d26;
           color: #dfe1e5;
-          margin: auto; }
+          margin: auto;
+          font-size: 18px; }
           body #parent-container .tab-menu .items .content a {
             color: #8ea6b9;
             text-decoration: underline; }

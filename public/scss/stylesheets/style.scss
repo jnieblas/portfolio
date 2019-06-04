@@ -111,18 +111,14 @@ body {
 
     .h1 {
       width: 720px;
-      @media (max-width: 750px){
-        width: 100%;
-      }
+      @media (max-width: 750px){ width: 100%; }
     }
 
     hr {
       width: 720px;
       color: $secondary-color;
       margin: auto;
-      @media (max-width: 750px) {
-        width: 100%;
-      }
+      @media (max-width: 750px) { width: 100%; }
     }
 
     .halved-container {
@@ -130,30 +126,22 @@ body {
       margin: auto;
       overflow: hidden;
       width: 720px;
-      @media (max-width: 750px) {
-        width: 100%;
-      }
+      @media (max-width: 750px) { width: 100%; }
       .left {
         flex: 1;
         display: block;
         margin: auto;
-        img {
-          -webkit-filter: saturate(1.3);
-        }
-        @media (max-width: 750px) {
-          padding-left: 15px;
-        }
+        img { -webkit-filter: saturate(1.3); }
+        @media (max-width: 750px) { padding-left: 15px; }
       }
 
       .right {
         flex: 1;
         margin: auto;
-        font-size: 19px;
+        font-size: 20px;
         text-align: center;
         padding-left: 15px;
-        @media(max-width: 750px){
-          padding-right: 15px;
-        }
+        @media(max-width: 750px){ padding-right: 15px; }
       }
     }
 
@@ -195,22 +183,16 @@ body {
         }
         .tech {
           font-size: 40px;
-          @media(max-width: 600px){
-            font-size: 30px;
-          }
+          @media(max-width: 600px){ font-size: 30px; }
         }
         .projects {
           font-size: 30px;
-          @media(max-width: 615px){
-            font-size: 20px;
-          }
+          @media(max-width: 615px){ font-size: 20px; }
         }
         .devicons{
           font-size: 60px;
           padding: 4px 8px;
-          @media(max-width: 600px){
-            font-size: 50px;
-          }
+          @media(max-width: 600px){ font-size: 50px; }
          }
 
         .content {
@@ -219,36 +201,28 @@ body {
           background-color: $secondary-color;
           color: $primary-color;
           margin: auto;
+          font-size: 18px;
 
           a {
             color: $link-color;
             text-decoration: underline;
           }
-          p {
-            text-align: center;
-          }
+          p { text-align: center; }
         }
 
         .tech-item {
           padding: 50px;
           padding-bottom: 5px;
           width: 337px;
-          p {
-            padding-top: 25px;
-          }
-
-          @media (max-width: 600px){
-            width: 276px;
-          }
+          p { padding-top: 25px;}
+          @media (max-width: 600px){ width: 276px; }
         }
 
         .proj-item {
           width: 565px;
           padding: 20px;
 
-          @media (max-width: 615px){
-            width: 407px;
-          }
+          @media (max-width: 615px){ width: 407px; }
         }
 
         /* Open tab button styles */
