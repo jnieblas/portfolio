@@ -78,11 +78,6 @@ body {
         }
       }
 
-      .active {
-        color: $primary-color;
-        background-color: $secondary-color;
-      }
-
       #connect-container {
         #connect-items {
           font-size: 1.4em;
@@ -131,12 +126,12 @@ body {
   }
 
   /* Home Block Content*/
-  #parent-container {
+  .parent-container {
     padding-top: 80px;
     border: none;
     width: 720px;
     margin: auto;
-    display: block;
+    display: none;
     background-color: $primary-color;
     overflow: hidden;
 
@@ -249,6 +244,11 @@ body {
             background-color: $tertiary-color; }
         }
 
+        .open {
+          background-color: $secondary-color;
+          color: $primary-color;
+        }
+
         @font-face {
           font-family:'devicons';
           src:url('../fonts/devicons.eot?xqxft6');
@@ -303,6 +303,10 @@ body {
           p { text-align: center; }
         }
 
+        #hpotter {
+          display: block;
+        }
+
         .tech-item {
           padding: 50px;
           padding-bottom: 5px;
@@ -338,6 +342,9 @@ body {
         }
       }
     }
+  }
+  #index-container {
+    display: block;
   }
 }
 

@@ -25,5 +25,3 @@ function openTab(tabName, elmnt) {
     elmnt.className = elmnt.className + " open ";
   }
 }
-
-document.getElementById("default").click();
