@@ -3,13 +3,15 @@ doctype html
 | releases/v5.8.2/css/all.css" integrity=
 | "sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
 | crossorigin="anonymous">
+<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'
+  | rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 head
   title= title
-  script(src="/jquery/jquery.js")
   script(src="/javascripts/loadPage.js")
   link(rel='stylesheet', href='/stylesheets/style.css')
+
 body(onload="load()", style="margin:0;")
   <div id="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
   div(id="stuff", style="display:none;")
@@ -19,12 +21,12 @@ body(onload="load()", style="margin:0;")
       div(class="bar3")
     ul(id="navbar-tabs")
       li(class="nav-item")
-        a(id="home", href="/") #[strong Home]
+        a(id="home", href="#Home", onclick="openSection('index-container')") #[strong Home]
       li(class="nav-item")
-        a(id="projects", href="/projects") #[strong Projects]
+        a(id="projects", href="#Projects", onclick="openSection('projects-container')") #[strong Projects]
       li(class="nav-item")
         div(id="connect-container")
-          a(id="connect", href="#") #[strong Connect]
+          a(id="connect", href="#Connect") #[strong Connect]
           div(id="connect-items")
             a(href="https://www.github.com/jonnieblas", target="_blank",
              class="fab fa-github item")
@@ -35,8 +37,10 @@ body(onload="load()", style="margin:0;")
       li(class="nav-item")
         a(id="resume", href="/files/Jonathan_Nieblas_Res.pdf",
          target="blank") #[strong Resume]
-    script(src="/javascripts/AddActive.js")
-    script(src="/javascripts/openMenu.js")
-    block content
 
+    script(src="/javascripts/openSection.js")
+    script(src="/javascripts/openTabs.js")
+    script(src="/javascripts/openMenu.js")
+
+    block content
     include foot.pug
