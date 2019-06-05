@@ -59,8 +59,6 @@ body {
         color: #dfe1e5; }
       @media only screen and (max-width: 415px) {
         body ul .nav-item a {
-          display: block;
-          float: left;
           width: 100%;
           text-align: left;
           font-size: 14px; } }
@@ -88,10 +86,7 @@ body {
       display: inline; }
       @media only screen and (max-width: 415px) {
         body ul .nav-item #connect-container:hover #connect-items {
-          display: inline;
-          float: left;
-          text-align: left;
-          width: 17%; } }
+          width: 100%; } }
     body ul .nav-item #resume {
       float: right; }
       body ul .nav-item #resume:hover {
@@ -115,11 +110,11 @@ body {
   @media only screen and (max-width: 750px) and (max-width: 415px) {
     body #parent-container {
       padding-top: 30px; } }
-    body #parent-container #intro {
+    body #parent-container .intro {
       font-weight: bold;
       font-size: 30px; }
       @media only screen and (max-width: 415px) {
-        body #parent-container #intro {
+        body #parent-container .intro {
           font-size: 20px; } }
     body #parent-container hr {
       width: 720px;
@@ -136,6 +131,9 @@ body {
       @media only screen and (max-width: 750px) {
         body #parent-container .halved-container {
           width: 100%; } }
+  @media only screen and (max-width: 750px) and (max-width: 415px) {
+    body #parent-container .halved-container {
+      display: block; } }
       body #parent-container .halved-container .left {
         flex: 1;
         display: block;
@@ -145,6 +143,10 @@ body {
         @media only screen and (max-width: 750px) {
           body #parent-container .halved-container .left {
             padding-left: 15px; } }
+  @media only screen and (max-width: 750px) and (max-width: 415px) {
+    body #parent-container .halved-container .left {
+      padding-left: 0;
+      width: 80%; } }
       body #parent-container .halved-container .right {
         flex: 1;
         margin: auto;
@@ -154,11 +156,18 @@ body {
         @media (max-width: 750px) {
           body #parent-container .halved-container .right {
             padding-right: 15px; } }
+  @media (max-width: 750px) and (max-width: 415px) {
+    body #parent-container .halved-container .right {
+      padding-right: 0;
+      padding-left: 0; } }
     body #parent-container .tab-menu {
       display: block;
       position: relative;
       margin: auto;
       text-align: center; }
+      @media only screen and (max-width: 415px) {
+        body #parent-container .tab-menu .h1 {
+          font-size: 20px; } }
       @media only screen and (max-width: 415px) {
         body #parent-container .tab-menu .tech-container {
           width: 346px; } }
