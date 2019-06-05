@@ -13,6 +13,20 @@ body {
   font: 14px "Yu Gothic";
   -webkit-font-smoothing: antialiased;
   /* Home Block Content*/ }
+  body #menu {
+    display: none;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px; }
+    body #menu .bar1, body #menu .bar2, body #menu .bar3 {
+      width: 30px;
+      height: 5px;
+      margin: 6px 0;
+      background-color: #161d26; }
+    @media only screen and (max-width: 415px) {
+      body #menu {
+        display: block;
+        cursor: pointer; } }
   body ul {
     position: fixed;
     top: 0;
@@ -22,9 +36,15 @@ body {
     margin: 0;
     padding: 0;
     z-index: 1;
-    background-color: #dfe1e5;
-    overflow: hidden; }
-    body ul li a {
+    overflow: hidden;
+    background-color: #dfe1e5; }
+    @media only screen and (max-width: 415px) {
+      body ul {
+        background-color: transparent;
+        display: none;
+        position: relative;
+        padding-left: 10px; } }
+    body ul .nav-item a {
       float: left;
       display: block;
       text-align: center;
@@ -32,14 +52,22 @@ body {
       text-decoration: none;
       font-size: 17px;
       color: #161d26;
+      background-color: #dfe1e5;
       overflow: hidden; }
-      body ul li a:hover {
+      body ul .nav-item a:hover {
         background-color: #c13804;
         color: #dfe1e5; }
-    body ul li .active {
+      @media only screen and (max-width: 415px) {
+        body ul .nav-item a {
+          display: block;
+          float: left;
+          width: 100%;
+          text-align: left;
+          font-size: 14px; } }
+    body ul .nav-item .active {
       color: #dfe1e5;
       background-color: #161d26; }
-    body ul li #connect-container #connect-items {
+    body ul .nav-item #connect-container #connect-items {
       font-size: 1.4em;
       display: none;
       position: relative;
@@ -47,23 +75,31 @@ body {
       background-color: #dfe1e5;
       color: #161d26;
       overflow: hidden; }
-      body ul li #connect-container #connect-items .item {
+      body ul .nav-item #connect-container #connect-items .item {
         font-size: 1.4em;
         padding: 14px 16px;
         float: left;
         color: #161d26; }
-      body ul li #connect-container #connect-items a:hover {
+      body ul .nav-item #connect-container #connect-items a:hover {
         color: #dfe1e5;
         background-color: #c13804; }
-    body ul li #connect-container:hover #connect-items {
-      transition: ease-out;
+    body ul .nav-item #connect-container:hover #connect-items {
       background-color: #dfe1e5;
       display: inline; }
-    body ul li #resume {
+      @media only screen and (max-width: 415px) {
+        body ul .nav-item #connect-container:hover #connect-items {
+          display: inline;
+          float: left;
+          text-align: left;
+          width: 17%; } }
+    body ul .nav-item #resume {
       float: right; }
-      body ul li #resume:hover {
+      body ul .nav-item #resume:hover {
         background-color: #c13804;
         color: white; }
+      @media only screen and (max-width: 415px) {
+        body ul .nav-item #resume {
+          float: none; } }
   body #parent-container {
     padding-top: 80px;
     border: none;
@@ -76,16 +112,20 @@ body {
       body #parent-container {
         width: 100%;
         margin: auto; } }
-    body #parent-container .h1 {
-      width: 720px; }
-      @media only screen and (max-width: 750px) {
-        body #parent-container .h1 {
-          width: 100%; } }
+  @media only screen and (max-width: 750px) and (max-width: 415px) {
+    body #parent-container {
+      padding-top: 30px; } }
+    body #parent-container #intro {
+      font-weight: bold;
+      font-size: 30px; }
+      @media only screen and (max-width: 415px) {
+        body #parent-container #intro {
+          font-size: 20px; } }
     body #parent-container hr {
       width: 720px;
       color: #161d26;
       margin: auto; }
-      @media only screen and (max-width: 750px) {
+      @media only screen and (max-width: 415px) {
         body #parent-container hr {
           width: 100%; } }
     body #parent-container .halved-container {
@@ -119,7 +159,7 @@ body {
       position: relative;
       margin: auto;
       text-align: center; }
-      @media only screen and (max-width: 377px) {
+      @media only screen and (max-width: 415px) {
         body #parent-container .tab-menu .tech-container {
           width: 346px; } }
       body #parent-container .tab-menu .items {
@@ -157,7 +197,7 @@ body {
           @media only screen and (max-width: 600px) {
             body #parent-container .tab-menu .items .tech {
               font-size: 30px; } }
-  @media only screen and (max-width: 600px) and (max-width: 377px) {
+  @media only screen and (max-width: 600px) and (max-width: 415px) {
     body #parent-container .tab-menu .items .tech {
       font-size: 25px; } }
         body #parent-container .tab-menu .items .projects {
@@ -168,7 +208,7 @@ body {
   @media only screen and (max-width: 615px) and (max-width: 450px) {
     body #parent-container .tab-menu .items .projects {
       font-size: 15px; } }
-  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 377px) {
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) {
     body #parent-container .tab-menu .items .projects {
       font-size: 13px; } }
         body #parent-container .tab-menu .items .devicons {
@@ -177,7 +217,7 @@ body {
           @media only screen and (max-width: 600px) {
             body #parent-container .tab-menu .items .devicons {
               font-size: 50px; } }
-  @media only screen and (max-width: 600px) and (max-width: 377px) {
+  @media only screen and (max-width: 600px) and (max-width: 415px) {
     body #parent-container .tab-menu .items .devicons {
       font-size: 45px; } }
         body #parent-container .tab-menu .items .content {
@@ -201,7 +241,7 @@ body {
           @media only screen and (max-width: 600px) {
             body #parent-container .tab-menu .items .tech-item {
               width: 276px; } }
-  @media only screen and (max-width: 600px) and (max-width: 377px) {
+  @media only screen and (max-width: 600px) and (max-width: 415px) {
     body #parent-container .tab-menu .items .tech-item {
       width: 248px; } }
         body #parent-container .tab-menu .items .proj-item {
@@ -213,7 +253,7 @@ body {
   @media only screen and (max-width: 615px) and (max-width: 450px) {
     body #parent-container .tab-menu .items .proj-item {
       width: 327px; } }
-  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 377px) {
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) {
     body #parent-container .tab-menu .items .proj-item {
       width: 295px; } }
         body #parent-container .tab-menu .items .open {

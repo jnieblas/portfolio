@@ -18,6 +18,23 @@ body {
   font: 14px "Yu Gothic";
   -webkit-font-smoothing: antialiased;
 
+  #menu{
+    display: none;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    .bar1, .bar2, .bar3{
+      width: 30px;
+      height: 5px;
+      margin: 6px 0;
+      background-color: $secondary-color;
+    }
+    @media only screen and (max-width: 415px){
+      display: block;
+      cursor: pointer;
+    }
+  }
+
   ul {
     position: fixed;
     top: 0;
@@ -27,10 +44,17 @@ body {
     margin: 0;
     padding: 0;
     z-index: 1;
-    background-color: $primary-color;
     overflow: hidden;
+    background-color: $primary-color;
 
-    li {
+    @media only screen and (max-width: 415px){
+      background-color: transparent;
+      display: none;
+      position: relative;
+      padding-left: 10px;
+    }
+
+    .nav-item {
       a {
         float: left;
         display: block;
@@ -39,11 +63,20 @@ body {
         text-decoration: none;
         font-size: 17px;
         color: $secondary-color;
+        background-color: $primary-color;
         overflow: hidden;
 
         &:hover {
           background-color: $tertiary-color;
           color: $primary-color;
+        }
+
+        @media only screen and (max-width: 415px){
+          display: block;
+          float: left;
+          width: 100%;
+          text-align: left;
+          font-size: 14px;
         }
       }
 
@@ -76,9 +109,14 @@ body {
         }
 
         &:hover #connect-items {
-          transition: ease-out;
           background-color: $primary-color;
           display: inline;
+          @media only screen and (max-width: 415px){
+            display: inline;
+            float: left;
+            text-align: left;
+            width: 17%;
+          }
         }
       }
 
@@ -88,6 +126,10 @@ body {
         &:hover {
           background-color: $tertiary-color;
           color: white;
+        }
+
+        @media only screen and (max-width: 415px){
+         float: none;
         }
       }
     }
@@ -106,18 +148,24 @@ body {
     @media only screen and (max-width: 750px) {
       width: 100%;
       margin: auto;
+      @media only screen and (max-width: 415px) {
+        padding-top: 30px;
+      }
     }
 
-    .h1 {
-      width: 720px;
-      @media only screen and (max-width: 750px){ width: 100%; }
+    #intro {
+      font-weight: bold;
+      font-size: 30px;
+      @media only screen and (max-width: 415px){
+       font-size: 20px;
+      }
     }
 
     hr {
       width: 720px;
       color: $secondary-color;
       margin: auto;
-      @media only screen and (max-width: 750px) { width: 100%; }
+      @media only screen and (max-width: 415px) { width: 100%; }
     }
 
     .halved-container {
@@ -149,9 +197,9 @@ body {
       position: relative;
       margin: auto;
       text-align: center;
-      
+
       .tech-container {
-        @media only screen and (max-width: 377px){
+        @media only screen and (max-width: 415px){
         width: 346px;
         }
       }
@@ -192,7 +240,7 @@ body {
           font-size: 40px;
           @media only screen and (max-width: 600px){
             font-size: 30px;
-            @media only screen and (max-width: 377px){
+            @media only screen and (max-width: 415px){
               font-size: 25px;
             }
           }
@@ -203,7 +251,7 @@ body {
             font-size: 20px;
             @media only screen and (max-width: 450px){
               font-size: 15px;
-              @media only screen and (max-width: 377px){
+              @media only screen and (max-width: 415px){
                 font-size: 13px;
               }
             }
@@ -214,7 +262,7 @@ body {
           padding: 4px 8px;
           @media only screen and (max-width: 600px){
             font-size: 50px;
-            @media only screen and (max-width: 377px){
+            @media only screen and (max-width: 415px){
               font-size: 45px;
             }
           }
@@ -242,7 +290,7 @@ body {
           p { padding-top: 25px;}
           @media only screen and (max-width: 600px){
             width: 276px;
-            @media only screen and (max-width: 377px){
+            @media only screen and (max-width: 415px){
               width: 248px;
             }
           }
@@ -256,7 +304,7 @@ body {
             width: 407px;
             @media only screen and (max-width: 450px){
               width: 327px;
-              @media only screen and (max-width: 377px){
+              @media only screen and (max-width: 415px){
                 width: 295px;
               }
             }
