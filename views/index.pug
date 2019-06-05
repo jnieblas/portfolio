@@ -3,7 +3,7 @@ block content
   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'
   | rel='stylesheet'>
   div(id="parent-container")
-    h1 Hello! My name is Jonathan Nieblas. I am a Computer Science graduate living in Denver, CO.
+    p(class="intro") Hello! My name is Jonathan Nieblas. I am a Computer Science graduate living in Denver, CO.
     hr
     br
     section(class="halved-container")
@@ -12,7 +12,7 @@ block content
       div(class="right")
         p
           | I want to bring my skills, as well as my uniqueness, to a team that
-          | desires a SWE willing to learn and explore the technologies they need. Outside of designing
+          | desires someone willing to learn and explore the technologies they need. Outside of designing
           | and coding software, I love to play guitar, go on hikes, and visit
           | local breweries with my pals! If you'd like to get in touch, please,
           | don't hesitate to reach out via LinkedIn, GitHub, or email.
@@ -21,8 +21,8 @@ block content
     br
 
     div(class="tab-menu")
-      h1 Tech I'm currently fascinated with:
-      div(class="items")
+      p(class="intro") Tech I'm currently fascinated with:
+      div(class="items tech-container")
         button(class="fab fa-docker tablink tech", onclick="openTab('docker', this)")
         button(class="fab fa-jenkins tablink tech", onclick="openTab('jenkins', this)")
         button(class="fab fa-aws tablink tech", onclick="openTab('aws', this)")

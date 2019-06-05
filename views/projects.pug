@@ -5,7 +5,7 @@ block content
     hr
     div(class="tab-menu")
       h1 Recent Projects
-      div(class="items")
+      div(class="items proj-container")
         button(id="default", class="fas fa-bug tablink projects",
           onclick="openTab('hpotter', this)")  HPotter
         button(class="fas fa-calculator tablink projects",
@@ -21,7 +21,7 @@ block content
           br
           br
           p
-          | HPotter is a simple to run honey pot, providing a network with
+          | HPotter is a simple to run honey pot that provides a network with
           | an extra level of security. When HPotter is deployed on a network, it
           | acts as a mock computer, attracting and reporting any attacks it receives.
           | Analyzing attacks will allow one to build a security system that
@@ -96,13 +96,19 @@ block content
           p
           | Fortunately, the sequence alignment problem can be solved by building
           | a table full of values that help to align the sequences based on scores
-          | for each index. For further explanation and code to experiment with,
-          | please check out my repository.
+          | for each index.
+          br
+          p
+          | To view a demonstration of how the sequence alignment
+          | problem can be solved using dynamic programming, as well as an explanation
+          | further breaking down the dynamic algorithm, give the Seqence
+          | repository a visit!
           br
           p Sequence utilizes: Java and GitHub
           a(href="https://github.com/jonnieblas/sequence-alignment",
             target="blank") Repository
 
+    br
     br
     hr
   script(src="/javascripts/openTab.js")

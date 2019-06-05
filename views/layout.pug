@@ -13,14 +13,18 @@ head
 body(onload="load()", style="margin:0;")
   <div id="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
   div(id="stuff", style="display:none;")
+    div(id="menu", onclick="openMenu()")
+      div(class="bar1")
+      div(class="bar2")
+      div(class="bar3")
     ul(id="navbar-tabs")
-      li
+      li(class="nav-item")
         a(id="home", href="/") #[strong Home]
-      li
+      li(class="nav-item")
         a(id="projects", href="/projects") #[strong Projects]
-      li
+      li(class="nav-item")
         div(id="connect-container")
-          a(href="#") #[strong Connect]
+          a(id="connect", href="#") #[strong Connect]
           div(id="connect-items")
             a(href="https://www.github.com/jonnieblas", target="_blank",
              class="fab fa-github item")
@@ -28,10 +32,11 @@ body(onload="load()", style="margin:0;")
               target="_blank", class="fab fa-linkedin item")
             a(href="mailto:Jonathan.Nieblas@outlook.com", target="_top",
               class="far fa-envelope item")
-      li
+      li(class="nav-item")
         a(id="resume", href="/files/Jonathan_Nieblas_Res.pdf",
          target="blank") #[strong Resume]
     script(src="/javascripts/AddActive.js")
+    script(src="/javascripts/openMenu.js")
     block content
 
     include foot.pug
