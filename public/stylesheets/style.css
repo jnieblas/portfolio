@@ -37,7 +37,7 @@ body {
     padding: 0;
     z-index: 1;
     overflow: hidden;
-    background-color: #dfe1e5; }
+    background-color: #161d26; }
     @media only screen and (max-width: 415px) {
       body ul {
         background-color: transparent;
@@ -51,8 +51,8 @@ body {
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
-      color: #161d26;
-      background-color: #dfe1e5;
+      color: #dfe1e5;
+      background-color: #161d26;
       overflow: hidden; }
       body ul .nav-item a:hover {
         background-color: #c13804;
@@ -67,14 +67,12 @@ body {
       display: none;
       position: relative;
       float: left;
-      background-color: #dfe1e5;
-      color: #161d26;
       overflow: hidden; }
       body ul .nav-item #connect-container #connect-items .item {
         font-size: 1.4em;
         padding: 14px 16px;
         float: left;
-        color: #161d26; }
+        color: #dfe1e5; }
       body ul .nav-item #connect-container #connect-items a:hover {
         color: #dfe1e5;
         background-color: #c13804; }
