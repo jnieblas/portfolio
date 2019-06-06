@@ -213,7 +213,10 @@ body {
 
       .tech-container {
         @media only screen and (max-width: 415px) {
-          width: 346px;
+          width: 319px;
+          @media only screen and (max-width: 351px) {
+            width: 289px;
+          }
         }
       }
 
@@ -259,7 +262,10 @@ body {
           @media only screen and (max-width: 600px) {
             font-size: 30px;
             @media only screen and (max-width: 415px) {
-              font-size: 25px;
+              padding: 10px 11px;
+              @media only screen and (max-width: 351px) {
+                font-size: 25px;
+              }
             }
           }
         }
@@ -270,7 +276,11 @@ body {
             @media only screen and (max-width: 450px) {
               font-size: 15px;
               @media only screen and (max-width: 415px) {
-                font-size: 13px;
+                padding: 10px 10px;
+                font-size: 16px;
+                @media only screen and (max-width: 351px) {
+                  font-size: 13px;
+                }
               }
             }
           }
@@ -281,7 +291,10 @@ body {
           @media only screen and (max-width: 600px) {
             font-size: 50px;
             @media only screen and (max-width: 415px) {
-              font-size: 45px;
+              font-size: 42px;
+              @media only screen and (max-width: 351px) {
+                font-size: 37px;
+              }
             }
           }
          }
@@ -313,7 +326,12 @@ body {
           @media only screen and (max-width: 600px) {
             width: 276px;
             @media only screen and (max-width: 415px) {
-              width: 248px;
+              width: 222px;
+              @media only screen and (max-width: 351px) {
+                padding-top: 20px;
+                width: 191px;
+                font-size: 15px;
+              }
             }
           }
         }
@@ -325,9 +343,14 @@ body {
           @media only screen and (max-width: 615px) {
             width: 407px;
             @media only screen and (max-width: 450px) {
+              padding-top: 10px;
               width: 327px;
               @media only screen and (max-width: 415px) {
                 width: 295px;
+                @media only screen and (max-width: 351px) {
+                  width: 245px;
+                  font-size: 15px;
+                }
               }
             }
           }

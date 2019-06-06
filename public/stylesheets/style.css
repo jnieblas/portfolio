@@ -165,7 +165,10 @@ body {
           font-size: 20px; } }
       @media only screen and (max-width: 415px) {
         body .parent-container .tab-menu .tech-container {
-          width: 346px; } }
+          width: 319px; } }
+  @media only screen and (max-width: 415px) and (max-width: 351px) {
+    body .parent-container .tab-menu .tech-container {
+      width: 289px; } }
       body .parent-container .tab-menu .items {
         display: inline-block;
         position: relative;
@@ -206,6 +209,9 @@ body {
               font-size: 30px; } }
   @media only screen and (max-width: 600px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .tech {
+      padding: 10px 11px; } }
+  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 351px) {
+    body .parent-container .tab-menu .items .tech {
       font-size: 25px; } }
         body .parent-container .tab-menu .items .projects {
           font-size: 30px; }
@@ -217,6 +223,10 @@ body {
       font-size: 15px; } }
   @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .projects {
+      padding: 10px 10px;
+      font-size: 16px; } }
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) and (max-width: 351px) {
+    body .parent-container .tab-menu .items .projects {
       font-size: 13px; } }
         body .parent-container .tab-menu .items .devicons {
           font-size: 60px;
@@ -226,7 +236,10 @@ body {
               font-size: 50px; } }
   @media only screen and (max-width: 600px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .devicons {
-      font-size: 45px; } }
+      font-size: 42px; } }
+  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 351px) {
+    body .parent-container .tab-menu .items .devicons {
+      font-size: 37px; } }
         body .parent-container .tab-menu .items .content {
           display: none;
           text-align: center;
@@ -252,7 +265,12 @@ body {
               width: 276px; } }
   @media only screen and (max-width: 600px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .tech-item {
-      width: 248px; } }
+      width: 222px; } }
+  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 351px) {
+    body .parent-container .tab-menu .items .tech-item {
+      padding-top: 20px;
+      width: 191px;
+      font-size: 15px; } }
         body .parent-container .tab-menu .items .proj-item {
           width: 565px;
           padding: 20px; }
@@ -261,10 +279,15 @@ body {
               width: 407px; } }
   @media only screen and (max-width: 615px) and (max-width: 450px) {
     body .parent-container .tab-menu .items .proj-item {
+      padding-top: 10px;
       width: 327px; } }
   @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .proj-item {
       width: 295px; } }
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) and (max-width: 351px) {
+    body .parent-container .tab-menu .items .proj-item {
+      width: 245px;
+      font-size: 15px; } }
         body .parent-container .tab-menu .items .open {
           color: #dfe1e5;
           background-color: #161d26; }
