@@ -265,12 +265,11 @@ body {
               width: 276px; } }
   @media only screen and (max-width: 600px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .tech-item {
-      padding-top: 20px;
-      width: 222px; } }
+      padding-top: 23px;
+      width: 219px; } }
   @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 365px) {
     body .parent-container .tab-menu .items .tech-item {
-      padding-top: 20px;
-      width: 191px;
+      width: 188px;
       font-size: 15px; } }
         body .parent-container .tab-menu .items .proj-item {
           width: 565px;
