@@ -166,7 +166,7 @@ body {
       @media only screen and (max-width: 415px) {
         body .parent-container .tab-menu .tech-container {
           width: 319px; } }
-  @media only screen and (max-width: 415px) and (max-width: 351px) {
+  @media only screen and (max-width: 415px) and (max-width: 365px) {
     body .parent-container .tab-menu .tech-container {
       width: 289px; } }
       body .parent-container .tab-menu .items {
@@ -210,7 +210,7 @@ body {
   @media only screen and (max-width: 600px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .tech {
       padding: 10px 11px; } }
-  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 351px) {
+  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 365px) {
     body .parent-container .tab-menu .items .tech {
       font-size: 25px; } }
         body .parent-container .tab-menu .items .projects {
@@ -225,7 +225,7 @@ body {
     body .parent-container .tab-menu .items .projects {
       padding: 10px 10px;
       font-size: 16px; } }
-  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) and (max-width: 351px) {
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) and (max-width: 365px) {
     body .parent-container .tab-menu .items .projects {
       font-size: 13px; } }
         body .parent-container .tab-menu .items .devicons {
@@ -237,7 +237,7 @@ body {
   @media only screen and (max-width: 600px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .devicons {
       font-size: 42px; } }
-  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 351px) {
+  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 365px) {
     body .parent-container .tab-menu .items .devicons {
       font-size: 37px; } }
         body .parent-container .tab-menu .items .content {
@@ -265,8 +265,9 @@ body {
               width: 276px; } }
   @media only screen and (max-width: 600px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .tech-item {
+      padding-top: 20px;
       width: 222px; } }
-  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 351px) {
+  @media only screen and (max-width: 600px) and (max-width: 415px) and (max-width: 365px) {
     body .parent-container .tab-menu .items .tech-item {
       padding-top: 20px;
       width: 191px;
@@ -284,7 +285,7 @@ body {
   @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) {
     body .parent-container .tab-menu .items .proj-item {
       width: 295px; } }
-  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) and (max-width: 351px) {
+  @media only screen and (max-width: 615px) and (max-width: 450px) and (max-width: 415px) and (max-width: 365px) {
     body .parent-container .tab-menu .items .proj-item {
       width: 245px;
       font-size: 15px; } }
