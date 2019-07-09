@@ -119,7 +119,7 @@ body {
         body .parent-container hr {
           width: 100%; } }
     body .parent-container .halved-container {
-      display: flex;
+      display: block;
       margin: auto;
       overflow: hidden;
       width: 720px; }
@@ -131,7 +131,7 @@ body {
       display: block; } }
       body .parent-container .halved-container .left {
         flex: 1;
-        display: block;
+        display: none;
         margin: auto; }
         body .parent-container .halved-container .left img {
           -webkit-filter: saturate(1.3); }
@@ -145,7 +145,7 @@ body {
       body .parent-container .halved-container .right {
         flex: 1;
         margin: auto;
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         padding-left: 15px; }
         @media (max-width: 750px) {
@@ -153,6 +153,7 @@ body {
             padding-right: 15px; } }
   @media (max-width: 750px) and (max-width: 415px) {
     body .parent-container .halved-container .right {
+      font-size: 15px;
       padding-right: 0;
       padding-left: 0; } }
     body .parent-container .tab-menu {
