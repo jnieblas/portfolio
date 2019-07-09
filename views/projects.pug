@@ -16,11 +16,16 @@ div(id="projects-container", class="parent-container")
         br
         br
         p
-        | HPotter is a simple to run honey pot that provides a network with
-        | an extra level of security. When HPotter is deployed on a network, it
-        | acts as a mock computer, attracting and reporting any attacks it receives.
-        | Analyzing attacks will allow one to build a security system that
-        | covers more bases, preventing future attacks across all networks.
+        | HPotter is a simple to run, mid-level honey pot that provides a network
+        | with an extra level of security. HPotter utilizes SSH, Telnet, and HTTP
+        | to imitate a machine. The machine intentionally contains vulnerabilities,
+        | so that it attracts and traps hackers. Whenever HPotter is attacked,
+        | it reports the date and time, IP address, latitude and longitude of the IP,
+        | network protocol, and any entered bash commands to a SQL database.
+        | The database is then queried and analyzed via a dashboard interface,
+        | provided by Arcadia Data. Analyzing HPotter attacks allows one to
+        | build a security system that covers more bases, increasing security
+        | across an entire network.
         br
         p
         | HPotter was a great opportunity for me to learn about long-term group
@@ -28,29 +33,30 @@ div(id="projects-container", class="parent-container")
         | the chance to operate in a team of five as the Tech Lead, Product Owner,
         | and Scrum Master.
         br
-        p HPotter utilizes: Python, Docker, SQLite, Trello, and GitHub
+        p Stack: Python, Docker, SQL, Trello, Git, and Arcadia Data
         a(href="https://github.com/drsjb80/HPotter",
           target="blank") Repository
       div(id="algs", class="content proj-item")
         br
         br
         p
-        | Algs is a small site containing a few different algorithms, brief
-        | explanations of the algorithms, as well as calculators demonstrating
-        | how they work. My goal with Algs was to learn how to code different algorithms,
-        | further expanding my algorithmic knowledge and problem solving skills.
-        | I also wanted to learn more about Docker and Jenkins, so Algs has
-        | given me a perfect setting for experimenting with containerization and
-        | continuous integration.
+        | Algs is a fun, small project that I'm continuing to build. It contains
+        | calculators for a selection of different algorithms from my Algorithm
+        | Analysis course, along with brief explanations of how each one functions.
+        | Some of the algorithms include Karatsuba multiplication, dynamic
+        | programming (through the sequence alignment problem), and branch and
+        | bound (through the zero-one knapsack problem).
         br
         p
-        | Algs is currently under construction. After I add a few more calculators,
-        | I hope to deploy it and have it as a viewable website for those that
-        | are interested.
+        | I enjoy doing deep-dives on well known algorithms, so I figured I
+        | would take that interest and turn it into a side project.
+        | Algs is currently under construction, as I need to further design the
+        | front-end and finish coding the back-end. After these pieces are finished,
+        | I hope to deploy Algs so that everyone can learn more about these
+        | algorithms with me!
         br
         p
-        | Algs utilizes: Node.js, Express.js, Python, Docker, Jenkins,
-        | Trello, and GitHub
+        | Stack: Node.js, Express.js, Python, CSS3, HTML5, SASS, and Git
         br
         br
         a(href="https://github.com/jonnieblas/Algs",
@@ -68,12 +74,13 @@ div(id="projects-container", class="parent-container")
         | Languages class.
         br
         p
-        | P11 is nearly complete, although I may add a few more built in functions
-        | to further extend the use of the small language. If you have
-        | any interest in experimenting with P11 or learning more about the grammar
-        | we designed, please check out the repo and the readme!
+        | P11 allows users to enter functions through a command REPL (read-eval-print loop),
+        | where they can make calls to a series of built-in functions. P11
+        | lets users define their own functions that can also be used in the REPL.
+        | P11 currently contains more than twenty built-in functions, including
+        | basic arithmetic and logic functions.
         br
-        p P11 utilizes: Java, GitHub, and Docker
+        p Stack: Java and Git
         a(href="https://github.com/jonnieblas/P11",
           target="blank") Repository
       div(id="sequence-alignment", class="content proj-item")
@@ -99,7 +106,7 @@ div(id="projects-container", class="parent-container")
         | further breaking down the dynamic algorithm, give the Seqence
         | repository a visit!
         br
-        p Sequence utilizes: Java and GitHub
+        p Stack: Java and Git
         a(href="https://github.com/jonnieblas/sequence-alignment",
           target="blank") Repository
   br
